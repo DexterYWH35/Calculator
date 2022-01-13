@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>My Calculator</p>
+
+    <table id="calculator" border="2">
+        <!-- 1st row -->
+        <tr><td><input type="text" id="display"></td></tr>
+        <!-- 2nd row -->
+        <tr>
+            <td>
+                <input type="button" value="A/C" id="clear" onclick="clr()">
+                <input type="button" value="+" id="addButton" onclick="display('+')">
+                <input type="button" value="-" id="minusButton" onclick="display('-')">
+
+            </td>
+        </tr>
+        <!-- 3rd row -->
+        <tr>
+            <td>
+                
+                <input type="button" value="1" id="b1" onclick="display('1')">
+                <input type="button" value="2" id="b2" onclick="display('2')">
+                <input type="button" value="3" id="b3" onclick="display('3')">
+                <input type="button" value="/" id="divideButton" onclick="display('/')">
+
+    
+            </td>
+        </tr>
+        <!-- 4th row -->
+        <tr>
+            <td>
+                <input type="button" value="4" id="b4" onclick="display('4')">
+                <input type="button" value="5" id="b5" onclick="display('5')">
+                <input type="button" value="6" id="b6" onclick="display('6')">
+                <input type="button" value="*" id="multipleButton" onclick="display('*')">
+            </td>
+        </tr>
+    
+        <!-- 5th row -->
+        <tr>
+            <td>
+                <input type="button" value="7" id="b7" onclick="display('7')">
+                <input type="button" value="8" id="b8" onclick="display('8')">
+                <input type="button" value="9" id="b9" onclick="display('9')">
+                <input type="button" value="=" id="calculateButton" onclick="calc()">
+            </td>
+        </tr>
+
+    </table>
+    <script src="./inedx.js"></script>
+</body>
+</html>
