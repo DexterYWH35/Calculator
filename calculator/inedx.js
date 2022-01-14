@@ -1,18 +1,17 @@
+//global
+let ans = document.getElementById("display");
+
 function display(item){
-    document.getElementById("display").value +=item
-    console.log(item)
+    ans.value +=item;
 }
 
 function clr(){
-    document.getElementById("display").value = ''
+    ans.value = "";
 }
 
 function calc(){
-    var result = document.getElementById("display").value
-    let final = eval(result)
+    const result = ans.value;
+    let final = eval(result);
 
-    document.getElementById("display").value = final 
-
-    console.log(final)
-
+    ans.value = final;
 }
